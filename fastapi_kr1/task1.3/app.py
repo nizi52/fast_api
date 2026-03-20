@@ -8,7 +8,6 @@ class Numbers(BaseModel):
     num1: float
     num2: float
 
-
 @app.post("/calculate")
 def calculate(numbers: Numbers):
     result = numbers.num1 + numbers.num2
